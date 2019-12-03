@@ -6,7 +6,7 @@
 ## Contents
 
 - [中文](#中文)
-- [English](#English)  TEST
+- [English](#English)
 - [Build Info](#Build-Info)
 - [Author](#Author)
 - [License](#License) 
