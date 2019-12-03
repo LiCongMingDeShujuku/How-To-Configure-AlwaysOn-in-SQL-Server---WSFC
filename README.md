@@ -48,7 +48,8 @@ Note: This process must be repeated for both nodes in the cluster ( Primary and 
 ![#](images/05-如何在SQL-Server-WSFC中搭建AlwaysOn.png?raw=true "#")
  
 6. Click ‘Connect’.
-6.单击“Connect”
+6.单击“Connect”。
+
 ![#](images/06-如何在SQL-Server-WSFC中搭建AlwaysOn.png?raw=true "#")
  
 7. Right-click ‘AlwaysOn High Availability’ and select ‘New Availability Group Wizard’.
