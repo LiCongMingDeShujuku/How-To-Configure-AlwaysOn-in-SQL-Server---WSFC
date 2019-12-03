@@ -6,7 +6,7 @@
 ## Contents
 
 - [中文](#中文)
-- [English](#English)
+- [English](#English)  TEST
 - [Build Info](#Build-Info)
 - [Author](#Author)
 - [License](#License) 
@@ -59,11 +59,13 @@ Note: This process must be repeated for both nodes in the cluster ( Primary and 
  
 8. Click ‘Next’.
 8. 单击 ‘Next’.
+
 ![#](images/08-如何在SQL-Server-WSFC中搭建AlwaysOn.png?raw=true "#")
 
  
 9. Type the name of your Availability Group ( In this example we are using SQLCAG ) and click ‘Next’.
 9.键入可用性组的名称（在此示例中，我们使用的是SQLCAG），然后单击“Next”。
+
 ![#](images/09-如何在SQL-Server-WSFC中搭建AlwaysOn.png?raw=true "#")
  
 10. Any database you have available will automatically be checked in the list. This is your opportunity to uncheck any databases you wish NOT to be configured for AlwaysOn. Simply Uncheck the databases you want to exclude from the configuration. In this configuration I have created a sample database called DBSYSMON. Click ‘Next’ to continue.
@@ -73,6 +75,7 @@ Note: This process must be repeated for both nodes in the cluster ( Primary and 
  
 11. Click ‘Add Replica’.
 11. 单击 ‘Add Replica’.
+
 ![#](images/11-如何在SQL-Server-WSFC中搭建AlwaysOn.png?raw=true "#")
  
 12. Click ‘Connect’ so you can authenticate to the other Database Server ( Secondary server in the Cluster ). In this example we are using a server called SQLC-02.
@@ -127,6 +130,7 @@ c. 3. 选择“Add”。
 d. 4. 从第一个子网提供IP，然后通过单击“Add”再次执行此过程并证明第二个子网的IP。
 
 ![#](images/16-如何在SQL-Server-WSFC中搭建AlwaysOn.png?raw=true "#")
+
 e. 5.单击 “Next”。 
 17. Provide the Share name you have configured for the Synchronization process. In this example we are using: \MyServerSQLCReplica, and click ‘Next’.
 Note: The replica share has to have the correct permissions applied to it. You will need to add the following objects as both Full Control for the folder level, and for the Advanced Share Permissions:
@@ -142,6 +146,7 @@ C. SQLC-01 $ AD服务器对象
 d. SQLC-02 $ AD服务器对象
 
 ![#](images/17-如何在SQL-Server-WSFC中搭建AlwaysOn.png?raw=true "#") 
+
 18. Click ‘Next’ for the Validation.
 18. 单击 ‘Next’ 进行验证。
 
@@ -156,6 +161,7 @@ Monitor the progress if necessary, but the process is complete at this stage.
 必要时监控进度，但此过程在此阶段完成。
 
 ![#](images/20-如何在SQL-Server-WSFC中搭建AlwaysOn.png?raw=true "#") 
+
 You may see an informational message stating “The current WSFC cluster quorum vote configuration is not recommended for this availability group”. This is simply a recommendation and by no means is this configuration not supported. Click ‘OK’ to finish.
 你可能会看到一条信息性消息，指出“不建议此可用性组使用当前的WSFC群集仲裁投票配置”。这只是一个建议，但此搭建绝不支持。 单击“OK”完成。
 
@@ -164,19 +170,6 @@ You may see an informational message stating “The current WSFC cluster quorum 
  
 Naturally; you should test your AlwaysOn configuration to ensure they are working properly.
 那么自然地接下来，你应该测试你的AlwaysOn搭建以确保它们可以正常工作。
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 [![WorksEveryTime](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://shitday.de/)
